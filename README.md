@@ -1,3 +1,15 @@
+# How to access online
+
+https://placement-cell-for-cn.herokuapp.com/users/login
+
+# How to run locally
+
+1. Clone project to local machine
+2. Run "npm i" to install all nodejs packages
+3. Install and run Mongodb service
+4. Run "npm start"
+5. Go to http://localhost:8999 using a web browser
+
 # Placement-Cell
 
 A company constantly needs to download their data to compile different reports. You need to create an
