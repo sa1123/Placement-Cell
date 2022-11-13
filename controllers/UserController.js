@@ -73,13 +73,13 @@ module.exports.CreateUser = async function (req, resp) {
 
 // CREATE A SESSION 
 module.exports.CreateSession = function (req, resp) {
-  req.flash("success", "Yayy !!! Logged In Successfully");
+  req.flash("success", "Logged In Successfully");
   return resp.redirect("/");
 };
 
 // SIGNOUT
 module.exports.signout = function (req, res) {
-  req.flash("success", "Ooops !!! Logged Out Successfully");
+  req.flash("success", "Logged Out Successfully");
   req.logout();
   return res.redirect("/");
 };

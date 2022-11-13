@@ -16,7 +16,7 @@ module.exports.companyhome =async function(req,resp){
 
       let studentlist = await Student.find({});
       
-      req.flash("success", "PLACEMENT CELL DASHBOARD");
+      // req.flash("success", "PLACEMENT CELL DASHBOARD");
       
       return resp.render("company",{studentlist});
 

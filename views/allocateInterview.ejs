@@ -8,7 +8,7 @@
     <title>INTERVIEW</title>
 </head>
 
-<body>
+<body style="background-color: black; color: white;">
    
      <!-- PARTIALS FOR HEADER -->
     <%- include('partials/header') %>
@@ -18,7 +18,7 @@
 
                 <div class="mb-3">
                     <label for="batchname" class="form-label">Batch</label>
-                    <select class="form-select" aria-label="Default select example" name="batchname" id="batchname">
+                    <select style="border: 3px solid blue;" class="form-select" aria-label="Default select example" name="batchname" id="batchname">
                         <option selected disabled>Select Batch</option>
                        
                         <%for(let batch of batch_array){%>
@@ -30,19 +30,19 @@
         
                 <div class="mb-3">
                     <label for="studentname" class="form-label">Student Name</label>
-                    <select class="form-select" aria-label="Default select example" name="studentname" id="studentname">
+                    <select style="border: 3px solid blue;" class="form-select" aria-label="Default select example" name="studentname" id="studentname">
                             
                     </select>
                 </div>
 
             <div class="mb-3">
                 <label for="input-companyname" class="form-label">Company</label>
-                <input type="text" class="form-control" id="input-companyname" name="companyname">
+                <input style="border: 3px solid blue;" type="text" class="form-control" id="input-companyname" name="companyname">
             </div>
 
             <div class="mb-3">
                 <label for="input-date" class="form-label">Date</label>
-                <input type="date" class="form-control" id="input-date" name="companydate">
+                <input style="border: 3px solid blue;" type="date" class="form-control" id="input-date" name="companydate">
             </div>
 
             <div>

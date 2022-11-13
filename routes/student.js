@@ -4,7 +4,6 @@ const express = require("express");
 const passport = require("passport");
 const router = express.Router();
 
-
 // IMPORTING THE CONTROLLERS
 const StudentController = require('../controllers/StudentControllers');
 
@@ -25,6 +24,5 @@ router.post("/modifydone",passport.checkAuthentication, StudentController.updted
 
 // routes for /student//delete/<id>
 router.get("/delete/:id",passport.checkAuthentication, StudentController.deletedata);
-
 
 module.exports = router;
