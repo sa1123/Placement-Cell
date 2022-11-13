@@ -1,6 +1,6 @@
 # How to access online
 
-https://placement-cell-for-cn.herokuapp.com/users/login
+Visit https://placement-cell-for-cn.herokuapp.com/users/login
 
 # How to run locally
 
