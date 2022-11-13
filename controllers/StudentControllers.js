@@ -108,7 +108,7 @@ module.exports.updatereq = async function(req,resp){
 
       return resp.render("editStudent", { studnt });
     } catch (error) {
-      console.log(`Error during updating the student form:  ${error}`);
+      console.log(`Error while updating the student form:  ${error}`);
       resp.redirect("back");
     }
 }

@@ -9,11 +9,12 @@
     <title>SIGNUP</title>
 </head>
 
-<body>
-    <div class="w-50 border border-dark mx-auto mt-5">
+<body style="background-color: blue;">
+
+    <div class="w-50 border border-dark mx-auto mt-5" style="background-color: black; color: white;">
 
         <div class="mx-auto mt-3 mb-4" style="width: 200px;">
-                <h1>SIGNUP</h1>
+                <h1>SIGN UP</h1>
         </div>
 
         <form class="w-50  mx-auto" action="/users/create" method="POST">
@@ -21,11 +22,11 @@
              <%- include('partials/create_employee') %>
 
             <div class="mb-4 mt-3" style="display: flex;justify-content: center;">
-                <button type="submit" class="btn btn-primary">SIGNUP</button>
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
             </div>
 
             <div class="mx-auto mb-3 mt-3" style="width: 300px;">
-                <h5 style="display: inline;">Already Have An Account&nbsp;</h5> <a href="/users/login">SIGN_IN</a>
+                <h5 style="display: inline;">Already have an account? </h5> <a href="/users/login">SIGN IN</a>
             </div>
         </form>
     </div>

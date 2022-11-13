@@ -5,10 +5,11 @@ https://placement-cell-for-cn.herokuapp.com/users/login
 # How to run locally
 
 1. Clone project to local machine
-2. Run "npm i" to install all nodejs packages
-3. Install and run Mongodb service
-4. Run "npm start"
-5. Go to http://localhost:8999 using a web browser
+2. Install nodejs, VS Code and set up Mongodb
+3. Create .env file and set custom parameters for SECRET_KEY and MONGODB_URI
+4. Run "npm i" to install all nodejs packages
+5. Run "npm start"
+6. Go to http://localhost:8999 using a web browser
 
 # Placement-Cell
 

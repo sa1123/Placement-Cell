@@ -16,7 +16,7 @@ module.exports.companyhome =async function(req,resp){
 
       let studentlist = await Student.find({});
       
-      req.flash("success", "COMPANY PORTAL");
+      req.flash("success", "PLACEMENT CELL DASHBOARD");
       
       return resp.render("company",{studentlist});
 
@@ -86,7 +86,7 @@ module.exports.scheduleInterview = async function(req,resp){
           {
             if(std.student._id == studentid){
 
-              req.flash("error", "STUDENT ALREADY INTERVIEW SCHEDULED");
+              req.flash("error", "STUDENT'S INTERVIEW ALREADY SCHEDULED");
               console.log("Student interview already added");
 
               return resp.redirect("back");
@@ -113,8 +113,8 @@ module.exports.scheduleInterview = async function(req,resp){
         studnt.save();
     }
 
-    req.flash("success", "HURRAY INTERVIEW SCHEDULE");
-    console.log('Interview schedule for this student');
+    req.flash("success", "INTERVIEW SCHEDULED!");
+    console.log('Interview scheduled for this student');
 
     return resp.redirect('/company/')
 
@@ -165,13 +165,13 @@ module.exports.updateRecords = async function(req,resp){
         }
       }
     }
-    req.flash("success", "STAUS CHANGES");
-    console.log('Interview status get changed');
+    req.flash("success", "STATUS CHANGED");
+    console.log('Interview status has been changed');
 
     return resp.redirect('back');
 
   } catch (error) {
-    console.log(`Error during changing the interview status:  ${error}`);
+    console.log(`Error while changing the interview status:  ${error}`);
     resp.redirect("back");
   }
 

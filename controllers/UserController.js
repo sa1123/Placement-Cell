@@ -11,7 +11,6 @@ module.exports.home = async function(req,resp){
 
     let students = await Student.find({});
    
-
     return resp.render("home",{students});
 }
 
@@ -39,7 +38,7 @@ module.exports.signup = function (req, resp) {
 module.exports.CreateUser = async function (req, resp) {
   try {
     if (req.body.password != req.body.confirmpassword) {
-      req.flash("error", "Password doesn't match..Renter..");
+      req.flash("error", "Password doesn't match");
       return resp.redirect("back");
     }
 

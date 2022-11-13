@@ -9,22 +9,22 @@
     <title>login</title>
 </head>
 
-<body>
+<body style="background-color: blue">
 
-    <div class="w-50 border border-dark mx-auto mt-5">
+    <div class="w-50 border border-dark mx-auto mt-5" style="background-color: black;">
 
-        <div class="mx-auto mt-3 mb-3" style="width: 200px;">
-                <h1>SIGNIN</h1>
+        <div class="mx-auto mt-3 mb-3" style="width: 150px; color: white;">
+                <h1>SIGN IN</h1>
         </div>
 
         <form class="w-50  mx-auto" action="/users/create-session" method="POST">
 
-            <div class="mb-3">
+            <div class="mb-3" style="color: white;">
                 <label for="input-email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="input-email" placeholder="name@example.com" name="email">
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3" style="color: white;">
                 <label for="input-password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="input-password" name="password">
             </div>
@@ -36,7 +36,7 @@
         </form>
 
         <div class="mx-auto mb-3 mt-3" style="width: 300px;">
-            <h5 style="display: inline;">Don't Have An Account&nbsp;</h5> <a href="/users/SignUp">SIGN_UP</a>
+            <h6 style="display: inline; color: white;">Don't Have An Account?</h6> <a href="/users/SignUp">SIGN UP</a>
         </div>
 
     </div>
@@ -67,7 +67,6 @@
                     }).show();
             <%}%>
 
-            
     </script>
 
 </body>

@@ -1,4 +1,4 @@
-// IMPORTING THE FS MODULE AND STUDENT COLLECTION
+// IMPORTING THE FS (File System) MODULE AND STUDENT COLLECTION
 const Student = require("../models/student");
 const fs = require('fs');
 
@@ -59,6 +59,7 @@ module.exports.downloadfile = async function(req,resp){
             csvdata += "\n" + data;
         }
 
+        //Reports are saved in "Reports" folder
         const file = fs.writeFile(
           "Reports/Studentdata.csv",
           csvdata,
@@ -68,15 +69,15 @@ module.exports.downloadfile = async function(req,resp){
               return resp.redirect("back");
             }
 
-            req.flash("success", "DATA IS DOWNLAODED");
-            console.log("Successfully reports generated");
+            req.flash("success", "DATA DOWNLOADED");
+            console.log("Reports successfully generated");
 
             return resp.download("Reports/Studentdata.csv");
           }
         );
 
     }catch(error){
-        console.log(`Error during reports generated:  ${error}`);
+        console.log(`Error during report generation:  ${error}`);
         resp.redirect("back");
     }
     
