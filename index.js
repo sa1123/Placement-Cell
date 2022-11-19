@@ -62,7 +62,7 @@ app.use("/", require("./routes"));
 //listening a port
 app.listen(port, function (error) {
   if (error) {
-    console.log(`Error in connecting with server: ${error}`);
+    console.log(`Error while connecting to the server: ${error}`);
   }
-  console.log(`Successfully connecting with server ${port}`);
+  console.log(`Successfully connected to the server ${port}`);
 });

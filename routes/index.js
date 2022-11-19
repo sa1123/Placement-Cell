@@ -18,5 +18,4 @@ router.use('/student',require('./student'));
 // routes for /company/
 router.use("/company", require("./company"));
 
-
 module.exports = router;
